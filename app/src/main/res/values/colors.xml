@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bright_orange">#FFAC1C</color>
+    <color name="harvest_gold">#CC8100</color>
+    <color name="secondary_blue">#7F7EFF</color>
+    <color name="ultramarine">#1f1fff</color>
+    <color name="ochre">#B87400</color>
+    <color name="golden_brown">#A36700</color>
+    <color name="duke_blue">#0000A3</color>
+    <color name="navy_blue">#00007A</color>
+</resources>
