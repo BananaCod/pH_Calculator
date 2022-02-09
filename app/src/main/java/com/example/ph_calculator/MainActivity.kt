@@ -3,6 +3,8 @@ package com.example.ph_calculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ph_calculator.databinding.ActivityMainBinding
+import kotlin.math.log10
+import kotlin.math.pow
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding:ActivityMainBinding
@@ -13,11 +15,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener {
-            if(binding.etNumber.text.isNotEmpty()) {
+            if(binding.etNumber.text.isNotEmpty() and binding.et2.text.isNotEmpty()) {
                 binding.tv3.text = ""
-                var value = binding.etNumber.text.toString().toDouble()
+                var power : Int = binding.et2.text.toString().toInt()
+                var ten : Float = 10F
+                var value = binding.etNumber.text.toString().toDouble() * (ten.pow(power))
                 binding.etNumber.text.clear()
-                var result = -1 * Math.log10(value)
+                var result = -1 * log10(value)
                 binding.tv3.text = result.toString()
             }
         }

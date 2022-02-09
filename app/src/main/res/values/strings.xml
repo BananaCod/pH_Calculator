@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">pH_Calculator</string>
+    <string name="equation">Wzór:  -log(H+)</string>
+    <string name="text1">Podaj stężenie jonów H+</string>
 </resources>
